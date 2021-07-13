@@ -75,11 +75,11 @@ $t = date("H");
 
 if ($t < "20")
  {
-  echo "Have a good day!";
+  echo "Have a nice day!";
 }
  else
  {
-  echo "Have a good night!";
+  echo " good night!";
 }
 ?>
  </body>
@@ -94,7 +94,7 @@ $favcolor = "red";
 
 switch ($favcolor) {
   case "red":
-    echo "Your fav color is red!";
+   echo "Your fav color is red!";
     break;
   case "blue":
     echo "Your fav color is blue!";
