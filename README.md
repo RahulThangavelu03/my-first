@@ -213,7 +213,7 @@ E-mail: <input type="text" name="email"><br>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") 
 {
-    $name = htmlspecialchars($_REQUEST['fname']);
+    $name = chars($_REQUEST['fname']);
     if (empty($name)) {
         echo "Name is empty";
     } else {
@@ -223,6 +223,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 ?>
 
 </body>
-
+</html>
 
 
