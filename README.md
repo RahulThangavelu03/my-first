@@ -126,4 +126,103 @@ while($x <= 5) {
 </body>
 </html>
 
+<!DOCTYPE HTML>
+
+<html>
+  <body>
+    <?php>
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php 
+$x = 75;
+$y = 25; 
+
+function addition() {
+  $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];
+}
+
+addition();
+echo $z;
+?>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<body>
+
+<?php 
+$x = 7;
+$y = 77; 
+
+function add() {
+  $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];
+}
+
+add();
+echo $z;
+?>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The onclick Event</h1>
+
+<p>Click the button  id="demo".</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE HTML>
+<html>  
+<body>
+
+<form action="welcome_get.php" method="get">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method="post" action="<?php echo $_SERVER['PHP_Self;?>">
+  Name: <input type="text" name="fname">
+  <input type="submit">
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+    $name = htmlspecialchars($_REQUEST['fname']);
+    if (empty($name)) {
+        echo "Name is empty";
+    } else {
+        echo $name;
+    }
+}
+?>
+
+</body>
+
+
 
