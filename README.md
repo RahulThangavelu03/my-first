@@ -172,7 +172,7 @@ echo $z;
 
 <h1>The onclick Event</h1>
 
-<p>Click the button  id="demo".</p>
+<p>Click  button  id="demo".</p>
 
 <button onclick="myFunction()">Click me</button>
 
