@@ -139,7 +139,8 @@ while($x <= 5) {
 $x = 75;
 $y = 25; 
 
-function addition() {
+function addition()
+ {
   $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];
 }
 
@@ -156,16 +157,17 @@ echo $z;
 $x = 7;
 $y = 77; 
 
-function add() {
+function add() 
+{
   $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];
 }
 
 add();
 echo $z;
 ?>
-
 </body>
 </html>
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -174,12 +176,13 @@ echo $z;
 
 <p>Click  button  id="demo".</p>
 
-<button onclick="myFunction()">Click me</button>
+<button onclick="myFunction()">Click </button>
 
 <p id="demo"></p>
 
 <script>
-function myFunction() {
+function myFunction()
+  {
   document.getElementById("demo").innerHTML = "Hello World";
 }
 </script>
@@ -214,9 +217,11 @@ E-mail: <input type="text" name="email"><br>
 if ($_SERVER["REQUEST_METHOD"] == "POST") 
 {
     $name = chars($_REQUEST['fname']);
-    if (empty($name)) {
-        echo "Name is empty";
-    } else {
+    if (empty($name))
+ {
+        echo Name is empty;
+    }
+ else {
         echo $name;
     }
 }
