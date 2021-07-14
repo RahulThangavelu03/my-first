@@ -149,7 +149,8 @@ echo $z;
 ?>
 
 </body>
-</html><!DOCTYPE html>
+</html>
+<!DOCTYPE html>
 <html>
 <body>
 
