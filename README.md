@@ -104,6 +104,85 @@ document.getElementById("demo").innerHTML = person.fullName;
 </body>
 </html>
 
+<!DOCTYPE html>
+<html>
+ <body>
+  <h1> h</h1>
+  <p1>P</p1>
+  <p id=demo></p>
+  <script>
+    var x = myfunction(1,2);
+   document.getElementbyId("demo")inner.HTMl= x;
+   function myfunction (a,b)
+   {
+   return a *b ;
+   }
+   </script>
+ </body>
+ </html>
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p>P</p>
+
+<p id="demo1"></p>
+
+<p id="demo2"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+  let carName = "BMW";
+  document.getElementById("demo1").innerHTML =
+  typeof carName + " " + carName;
+}
+
+document.getElementById("demo2").innerHTML =
+typeof carName;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE HTML>
+<html>
+<body>
+ <h1>h</h1>
+
+<p id ="demo"></p>
+
+ <script>
+  const car= { company:"audi", model:"q3",color : "white"};
+  document,getElementById("demo).innerHTML = the car name is " + car.name;
+ </script>
+ 
+ </body>
+ </html>
+  
+  
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+const car = {type:"Fiat", model:"500", color:"white"};
+document.getElementById("demo").innerHTML = "The car type is " + car.type;
+</script>
+
+</body>
+</html>
+
+  
 
 
 
