@@ -184,5 +184,69 @@ document.getElementById("demo").innerHTML = "The car type is " + car.type;
 
   
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>h</h2>
+<p>P</p>
+<p id="demo"></p>
+
+<script>
+ 
+let text = "nfenfnefnn";
+document.getElementById("demo").innerHTML = text.length;
+ 
+ </script>
+
+</body>
+</html>
+
+<! DOCTYPE HTML>
+<HTML>
+ <body>
+  
+  <h1>ff</h1>
+  <p>fkff</p>
+  <p id= "demo"></p>
+  
+  <script>
+   let str = "mnfujenjn";
+   document.grtelementById("demo").innerHTML= str.slice(1,5);
+  </script>
+  
+ </body>
+ </html>
+ 
+ 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>h</h3>
+
+<p>p</p>
+<p id="demo"></p>
+
+<script>
+
+ let str = "uhfjfnueenfi;
+document.getElementById("demo").innerHTML = str.slice(-6,-2);
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE HTML>
+<html>
+ <body>
+  <h1>h</h1>
+   <p1>P</p1>
+  <p id="demo"></p>
+  
+  <script>
+   
+
+
 
 
