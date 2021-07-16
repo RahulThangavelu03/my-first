@@ -245,7 +245,34 @@ document.getElementById("demo").innerHTML = str.slice(-6,-2);
   <p id="demo"></p>
   
   <script>
-   
+   let str = "hfhjfhefuhefui";
+   document.getelementById("demo").innerHTML= str.substring(7,9);
+  </script>
+ 
+ </body>
+ </html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>h</h2>
+
+<p>P</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo">P2</p>
+
+ <script>
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML; 
+  document.getElementById("demo").innerHTML = text.replace("kdmmddiiij","Wdjuhfnfjd");
+}
+</script>
+
+</body>
+</html>
+
 
 
 
