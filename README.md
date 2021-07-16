@@ -308,5 +308,85 @@ function myFunction() {
   
  </body>
  </html>
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p>P</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Hello";
+const myArr = text.split("");
+
+text = "";
+for (let i = 0; i < myArr.length; i++) 
+                                 {
+  text += myArr[i] + "<br>"
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p>P</p>
+
+<p id="demo"></p>
+
+<script>
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.indexOf("locate");
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>P</h2>
+
+<p>P</p>
+
+<p id="demo"></p>
+
+<script>
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.lastIndexOf("locate");
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p>P</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "The rain in SPAIN stays mainly in the plain"; 
+document.getElementById("demo").innerHTML = text.match(/ain/g);
+</script>
+
+</body>
+</html>
+
+
 
 
