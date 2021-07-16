@@ -273,6 +273,25 @@ function myFunction() {
 </body>
 </html>
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>h</h2>
+<p>P</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo">Hello World!</p>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML = text.toUpperCase();
+}
+</script>
+
+</body>
+</html>
+
 
 
 
