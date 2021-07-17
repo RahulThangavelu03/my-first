@@ -387,6 +387,116 @@ document.getElementById("demo").innerHTML = text.match(/ain/g);
 </body>
 </html>
 
+<!DOCTYPE html>
+<html>
+<body>
 
+<h2>H</h2> 
+<h2>H</h2>
+<p>P</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["banana", "orange", "apple", "mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>J</h2>
+<h2>P</h2>
+<p>P</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["banana", "orange", "apple", "mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.pop();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>J</h2> 
+<h2>p</h2>
+<p>P</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+const fruits = ["banana", "orange", "apple", "mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction()
+ {
+  fruits.push("grape");
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2> 
+<h2>H</h2>
+<p>P</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+const fruits = ["Banana", "orange", "apple", "mango"];
+document.getElementById("demo1").innerHTML = fruits;
+document.getElementById("demo2").innerHTML = fruits.shift();
+document.getElementById("demo3").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2> 
+<h2>H</h2>
+<p>P</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "orange", "apple", "mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() 
+ {
+  fruits.unshift("Lemon");
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
 
 
