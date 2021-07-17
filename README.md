@@ -499,4 +499,141 @@ function myFunction()
 </body>
 </html>
 
+ 
+ <!DOCTYPE html>
+<html>
+<body>
 
+<h2>h</h2>
+<p>p</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "orange", "apple", "mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction()
+ {
+  fruits.sort();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>h</h2>
+
+<p>p</p>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction()
+ {
+   fruits.sort();
+  fruits.reverse();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>h</h2>
+<p>p</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;
+
+function myFunction() 
+ {
+  points.sort(function(a, b){return b - a});
+  document.getElementById("demo").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>h</h2>
+<p>p</p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMax(points);
+
+function myArrayMax(arr)
+ {
+  return Math.max.apply(null, arr);
+}
+</script>
+
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>h</h2>
+<p>p.</p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = myArrayMin(points);
+
+function myArrayMin(arr)
+ {
+  let len = arr.length;
+  let min = Infinity;
+  while (len--) {
+    if (arr[len] < min) {
+      min = arr[len];
+    }
+  }
+  return min;
+}
+</script>
+
+</body>
+</html>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
