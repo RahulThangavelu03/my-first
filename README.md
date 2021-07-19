@@ -625,8 +625,109 @@ function myArrayMin(arr)
 </body>
 </html>
 
+<!DOCTYPE html>
+<html>
+<body>
 
- 
+<h2>H</h2>
+
+<p>P</p>
+
+<p id="demo">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Morning";
+}
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p>P</p>
+
+<p id="demo"></p>
+
+<script>
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = " Morning";
+} else {
+  greeting =" evening";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "S";
+    break;
+  case 1:
+    day = "M";
+    break;
+  case 2:
+    day = "T";
+    break;
+  case 3:
+    day = "W";
+    break;
+  case 4:
+    day = "T";
+    break;
+  case 5:
+    day = "F";
+    break;
+  case  6:
+    day = "S";
+}
+document.getElementById("demo").innerHTML = 
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["audi", "Volvo", "BMW", "KIA"];
+let i, len, text;
+for (i = 0, len = cars.length, text = ""; i < len; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
  
  
  
