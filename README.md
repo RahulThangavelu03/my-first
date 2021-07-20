@@ -819,6 +819,118 @@ document.getElementById("demo").innerHTML =
 
  
  
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p id="demo"></p>
+
+<script>
+var x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+}
+</script>
+
+</body>
+</html>
+
+ 
+ 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+function findMax() {
+  let max = -Infinity;
+  for(let i = 0; i < arguments.length; i++)
+    {
+    if (arguments[i] > max) 
+ {
+      max = arguments[i];
+    }
+  }
+  return max;
+} 
+document.getElementById("demo").innerHTML = findMax(4, 5, 6);
+</script>
+
+</body>
+</html>
+
+
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+let x = myFunction();
+function myFunction() 
+ {
+  return this;
+}
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p>P</p> 
+
+<p id="demo"></p>
+
+<script>
+const myObject = 
+ {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function() 
+ {
+    return this.firstName + " " + this.lastName;
+  }
+}
+document.getElementById("demo").innerHTML = myObject.fullName();
+</script>
+
+</body>
+</html>
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
