@@ -913,17 +913,95 @@ document.getElementById("demo").innerHTML = myObject.fullName();
 </html>
 
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id01">h</h1>
+
+<script>
+const element = document.getElementById("id01");
+element.innerHTML = "New Heading";
+</script>
+
+<p>JavaScript changed "Old Heading" to "New Heading".</p>
+
+</body>
+</html> 
+
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() 
+ {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+ </head>
+<body>
+
+<h2>h</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p>P</p>
 
 
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
+
+<script>
+document.getElementById("p2").style.color = "green";
+document.getElementById("p2").style.fontFamily = "Arial";
+document.getElementById("p2").style.fontSize = "larger";
+</script>
+
+
+</body>
+</html>
+
  
  
- 
- 
- 
- 
- 
- 
- 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p>P</p>
+
+<button id="myBtn">Try it</button>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction()
+ {
+  alert ("Hello World!");
+}
+</script>
+
+</body>
+</html>
+
  
  
  
