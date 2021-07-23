@@ -1004,11 +1004,115 @@ function myFunction()
 
  
  
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>h</h2> 
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+</script>
+
+</body>
+</html>
+
+ 
+ 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+const fruits = [  "Apple","Orange" "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++)
+ {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+<h3>h</h3>
+ <p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruit=["apple",  "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.pop();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
  
  
  
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+ <button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+const fruits = [ "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() 
+ {
+  fruits.push("Orange");
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
+
  
- 
- 
- 
- 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+ <p>P</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+const fruits = [ "Apple","Orange", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.sort();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
+
