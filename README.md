@@ -1115,4 +1115,73 @@ function myFunction() {
 
 </body>
 </html>
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+let answer1 = "dddf";
+let answer2 = "fdfgd'";
+ 
+document.getElementById("demo").innerHTML = answer1 + "<br>" + answer2 ; 
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+let text = "Akfnfeioe";
+document.getElementById("demo").innerHTML = text.length;
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+let str = "Apple, Banana, ;
+document.getElementById("demo").innerHTML = str.slice(4,8); 
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p id="demo"></p>
+
+<script>
+let str = "i like this!";
+document.getElementById("demo").innerHTML = str.search("like);
+</script>
+
+</body>
+</html>
+
+
+
+
 
