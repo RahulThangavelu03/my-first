@@ -1181,6 +1181,130 @@ document.getElementById("demo").innerHTML = str.search("like);
 </body>
 </html>
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+function sum() {
+  let sum = 0;
+  for(let i = 0; i < arguments.length; i++)
+                                      {
+    sum += arguments[i];
+  }
+  return sum;
+}
+document.getElementById("demo").innerHTML = sum(1,2,3);
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+const myObject = {
+  firstName:"raj",
+  lastName: "kumar",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+document.getElementById("demo").innerHTML = myObject.fullName(); 
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+function myFun(arg1, arg2) 
+ {
+  this.firstName = arg1;
+  this.lastName  = arg2;
+}
+
+const myObj = new myFun("raj","kumar")
+document.getElementById("demo").innerHTML = myObj.firstName; 
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+ <h2>H</h>
+<p id="demo"></p>
+
+<script>
+const myObject = 
+ {
+  firstName:"ram",
+  lastName: "prakash",
+  fullName: function()
+ {
+    return this.firstName + " " + this.lastName;
+  }
+}
+document.getElementById("demo").innerHTML = myObject.fullName();
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+const person = 
+ {
+  fullName: function(city, country) 
+ {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+const person1 = 
+ {
+  firstName:"santhosh",
+  lastName: "sakthi"
+}
+
+const person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+
+document.getElementById("demo").innerHTML = person.fullName.call(person1, "cbe", "india"); 
+</script>
+
+</body>
+</html>
+
+
+
+
+
 
 
 
