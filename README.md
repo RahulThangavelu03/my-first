@@ -1183,5 +1183,90 @@ document.getElementById("demo").innerHTML = str.search("like);
 
 
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+</body>
+</html>
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p id="p1">HW</p>
+
+<script>
+document.getElementById("p1").innerHTML = "hello world ";
+</script>
+
+ </body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p>P</p>
+<input id="numb">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+
+<script>
+function myFunction()
+ {
+  let x = document.getElementById("numb").value;
+  let text;
+  if (isNaN(x) || x < 1 || x > 10) 
+ {
+    text = "valid input";
+  } else 
+ {
+    text = "invalid input";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="id1">this is a Heading 1</h1>
+
+<button type="button" onclick="document.getElementById('id1').style.color = 'yellow'"> Click this</button>
+
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML Events</h2>
+<h2 onclick="this.innerHTML='the text changed'">Click on this </h2>
+
+</body>
+</html>
+
+ 
+ 
 
 
