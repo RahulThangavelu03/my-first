@@ -1267,6 +1267,89 @@ function myFunction()
 </html>
 
  
- 
+ <!DOCTYPE html>
+<html>
+<body>
 
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"Page hostname is: " + window.location.hostname;
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Page path is: " + window.location.pathname;
+</script>
+
+</body>
+</html>
+
+ <html>
+<head>
+
+ <script>
+function goBack()
+ {
+  window.history.back()
+}
+</script>
+ 
+</head>
+<body>
+
+<input type="button" value="Back" onclick="goBack()">
+
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p>P</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"navigator.cookieEnabled is " + navigator.cookieEnabled;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Timing</h2>
+
+<p>Click "Try it". Wait 3 seconds, and the page will alert "Hello".</p>
+
+<button onclick="setTimeout(myFunction, 5000);">Try it</button>
+
+<script>
+function myFunction() {
+  alert('Hello');
+}
+</script>
+
+</body>
+</html>
 
