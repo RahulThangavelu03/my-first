@@ -1352,16 +1352,12 @@ function myFunction() {
 
 </body>
 </html>
- 
- 
- 
- 
 <head>  
 <title> SignUp Page</title>  
 </head>  
-<body align="center" >  
+<body> 
 <h1> Create acc</h1>  
-<table cellspacing="2" align="center" cellpadding="8" border="0">  
+<table>
 <tr><td> Name</td>   
 <td><input type="text" placeholder="Enter your name" id="n1"></td></tr>  
 <tr><td>Email </td>  
