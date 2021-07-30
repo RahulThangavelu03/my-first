@@ -1413,8 +1413,97 @@ alert(" account created);
 </html>  
  
  
+ <!DOCTYPE html>
+<html>
+<body>
+<h2>H</h2>
+<p>P</p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+ 
+<script>
+const fruits = [  "Apple", "Mango","orange"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.pop();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
  
  
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2> 
+<h2>push()</h2>
+<p>The push() method appends a new element to an array.</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+const fruits = [  "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() 
+ {
+  fruits.push("orange");
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2> 
+<p>P</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = [ "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.shift();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p>P</p>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction()
+ {
+  
+  fruits.sort();
+  fruits.reverse();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
+
  
  
 
