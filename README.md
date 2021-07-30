@@ -1463,8 +1463,6 @@ function myFunction()
 <body>
 
 <h2>H</h2> 
-<p>P</p>
-
 <p id="demo1"></p>
 <p id="demo2"></p>
 
@@ -1485,17 +1483,15 @@ document.getElementById("demo2").innerHTML = fruits;
 <h2>H</h2>
 <p>P</p>
 <button onclick="myFunction()">Try it</button>
-
 <p id="demo"></p>
 
-<script>
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
+ <script>
+const fruits = [ "Orange", "Apple", "Mango"];
 document.getElementById("demo").innerHTML = fruits;
 
 function myFunction()
  {
-  
-  fruits.sort();
+    fruits.sort();
   fruits.reverse();
   document.getElementById("demo").innerHTML = fruits;
 }
