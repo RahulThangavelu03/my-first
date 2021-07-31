@@ -1500,6 +1500,160 @@ function myFunction()
 </body>
 </html>
 
+ nclick="this.innerHTML='the text changed'">Click on this </h2>
+
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"Page hostname is: " + window.location.hostname;
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Page path is: " + window.location.pathname;
+</script>
+
+</body>
+</html>
+
+ <html>
+<head>
+
+ <script>
+function goBack()
+ {
+  window.history.back()
+}
+</script>
+ 
+</head>
+<body>
+
+<input type="button" value="Back" onclick="goBack()">
+
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p>P</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"navigator.cookieEnabled is " + navigator.cookieEnabled;
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+
+<p id="p1">HW</p>
+
+<script>
+document.getElementById("p1").innerHTML = "hello world ";
+</script>
+
+ </body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p>P</p>
+<input id="numb">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+
+<script>
+function myFunction()
+ {
+  let x = document.getElementById("numb").value;
+  let text;
+  if (isNaN(x) || x < 1 || x > 10) 
+ {
+    text = "valid input";
+  } else 
+ {
+    text = "invalid input";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1 id="id1">this is a Heading 1</h1>
+
+<button type="button" onclick="document.getElementById('id1').style.color = 'yellow'"> Click this</button>
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML Events</h2>
+<h2 onclick="this.innerHTML='the text changed'">Click on this </h2>
+
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>H</h2>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"Page hostname is: " + window.location.hostname;
+</script>
+
+</body>
+</html>
+ 
  
  
 
