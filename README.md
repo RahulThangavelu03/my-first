@@ -1655,5 +1655,100 @@ document.getElementById("demo").innerHTML =
 </html>
  
  
- 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
 
+<div ng-app="">
+ 
+<p>P</p>
+<p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
+<h1>Hello {{name}}</h1>
+
+</div>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+<p> sum {{ 1 + 2 }}</p>
+</div>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<p>Try to change the names.</p>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName= "A";
+    $scope.lastName= "B";
+});
+</script>
+
+</body>
+</html>
+
+ 
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" my-directive></div>
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("myDirective", function() {
+    return {
+        template : "I was made in a directive constructor!"
+    };
+});
+</script>
+
+</body>
+</html>
+
+
+ <!DOCTYPE html>
+<html>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+{{ firstName + " " + lastName }}
+</div>
+
+<script>
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+});
+</script>
+
+<p>body para.</p>
+
+</body>
+</html>
