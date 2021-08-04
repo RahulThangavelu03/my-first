@@ -1752,3 +1752,128 @@ app.controller("myCtrl", function($scope) {
 
 </body>
 </html>
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<form ng-app="" name="myForm">
+    Email:
+    <input type="email" name="myAddress" ng-model="text">
+    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+</form>
+
+<p>P</p>
+
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<form ng-app="" name="myForm" ng-init="myText = 'post@myweb.com'">
+
+Email:
+<input type="email" name="myAddress" ng-model="myText" required>
+<p>Edit the e-mail address, and try to change the status.</p>
+<h1>h</h1>
+<p>Valid: {{myForm.myAddress.$valid}} </p>
+<p>Dirty: {{myForm.myAddress.$dirty}} </p>
+<p>Touched: {{myForm.myAddress.$touched}} </p>
+
+</form>
+
+</body>
+</html>
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <p ng-bind="firstname"></p>
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope)
+ {
+    $scope.firstname = "A";
+    $scope.lastname = "B";    
+});
+</script>
+
+<p>P</p>
+
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <h1 ng-click="changeName()">{{firstname}}</h1>
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope)
+ {
+    $scope.firstname = "A";
+    $scope.changeName = function() {
+        $scope.firstname = "B";
+    }
+});
+</script>
+
+<p>P.</p>
+
+</body>
+</html>
+
+ 
+ 
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope)
+ {
+    $scope.firstName = "a";
+    $scope.lastName = "b";
+});
+</script>
+
+</body>
+</html>
+
+ 
+ 
+ 
+ 
+
+ 
