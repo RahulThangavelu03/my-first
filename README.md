@@ -1872,8 +1872,163 @@ app.controller('myCtrl', function($scope)
 </html>
 
  
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    <p>First name: {{firstname}}</p>
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstname = "John";
+    $scope.lastname = "Doe";    
+});
+</script>
+
+</body>
+</html>
  
  
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope)
+ {
+    $scope.firstName = "A";
+    $scope.lastName = "B";
+});
+</script>
+
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<h1>{{carname}}</h1>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) 
+ {
+    $scope.carname = "Volvo";
+});
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<input ng-model="name">
+
+<h1>My name is {{name}}</h1>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) 
+ {
+    $scope.name = "John Doe";
+});
+</script>
+
+<p>P</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<ul>
+  <li ng-repeat="x in names">{{x}}</li>
+</ul>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+
+app.controller('myCtrl', function($scope) 
+ {
+    $scope.names = ["Emil", "Tobias", "Linus"];
+});
+</script>
+
+<p>P.</p>
+
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="myApp">
+
+<p>P1</p>
+<h1>{{color}}</h1>
+
+<div ng-controller="myCtrl">
+
+<p>P2</p>
+<h1>{{color}}</h1>
+
+</div>
+
+<p>P2</p>
+<h1>{{color}}</h1>
+
+<script>
+var app = angular.module('myApp', []);
+app.run(function($rootScope) 
+ {
+    $rootScope.color = 'blue';
+});
+app.controller('myCtrl', function($scope)
+ {
+    $scope.color = "red";
+});
+</script>
+
+</body>
+</html>
+
  
 
  
