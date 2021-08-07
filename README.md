@@ -2029,6 +2029,160 @@ app.controller('myCtrl', function($scope)
 </body>
 </html>
 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="personCtrl">
+
+<p>The name is {{ lastName | uppercase }}</p>
+
+</div>
+
+<script>
+angular.module('myApp', []).controller('personCtrl', function($scope)
+ {
+    $scope.firstName = "mksms",
+    $scope.lastName = "kkcka"
+});
+</script>
+
+</body>
+</html>
  
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="costCtrl">
+
+<h1>Price: {{ price | currency }}</h1>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('costCtrl', function($scope) 
+ {
+    $scope.price = 58;
+});
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="namesCtrl">
+
+<ul>
+  <li ng-repeat="x in names | filter : 'i'">
+    {{ x }}
+  </li>
+</ul>
+
+</div>
+
+<script>
+angular.module('myApp', []).controller('namesCtrl', function($scope) {
+    $scope.names = [
+        'a'
+ 'e'
+ 'i'
+ 'o'
+ 'u'
+  ];
+});
+</script>
+
+<p>This example displays only the names containing the letter "i".</p>
+
+</body>
+</html>
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="namesCtrl">
+
+<p>Type a letter in the input field:</p>
+
+<p><input type="text" ng-model="test"></p>
+
+<ul>
+  <li ng-repeat="x in names | filter:test">
+    {{ x }}
+  </li>
+</ul>
+
+</div>
+
+<script>
+angular.module('myApp', []).controller('namesCtrl', function($scope) 
+ {
+    $scope.names = [
+        'a'
+ 'e'
+ 'i'
+ 'o'
+ 'u'
+    ];
+});
+</script>
+
+<p>The list will only consists of names matching the filter.</p>
+
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<ul ng-app="myApp" ng-controller="namesCtrl">
+<li ng-repeat="x in names">
+    {{x | myFormat}}
+</li>
+</ul>
+
+<script>
+var app = angular.module('myApp', []);
+app.filter('myFormat', function() 
+ {
+    return function(x) {
+        var i, c, txt = "";
+        for (i = 0; i < x.length; i++)
+ {
+            c = x[i];
+            if (i % 2 == 0) {
+                c = c.toUpperCase();
+            }
+            txt += c;
+        }
+        return txt;
+    };
+});
+app.controller('namesCtrl', function($scope)
+ {
+    $scope.names = [
+        'raj'
+ 'prabakar'
+ 'kishore'
+        ];
+});
+</script>
+</body>
+</html>
+
 
  
