@@ -2185,4 +2185,77 @@ app.controller('namesCtrl', function($scope)
 </html>
 
 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+<p>P</p>
+<h3>{{myUrl}}</h3>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $location) {
+    $scope.myUrl = $location.absUrl();
+});
+</script>
+
+</body>
+</html>
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<p>Today's welcome message is:</p>
+
+<h1>{{myWelcome}}</h1>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http)
+ {
+  $http.get("welcome.htm").then(function (response)
+ {
+      $scope.myWelcome = response.data;
+  });
+});
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<p>P</p>
+
+<h1>{{myHeader}}</h1>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $timeout) 
+ {
+  $scope.myHeader = "Hello World!";
+  $timeout(function ()
+ {
+      $scope.myHeader = "the text is changed";
+  }, 3000);
+});
+</script>
+
+</body>
+</html>
+
+
  
