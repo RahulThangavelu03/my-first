@@ -2257,5 +2257,94 @@ app.controller('myCtrl', function($scope, $timeout)
 </body>
 </html>
 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<p>Today's welcome message is:</p>
+
+<h1>{{myWelcome}}</h1>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) 
+ {
+  $http.get("welcome.htm")
+  .then(function(response) {
+      $scope.myWelcome = response.data;
+  });
+});
+</script>
+
+</body>
+</html>
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<p>Today's welcome message is:</p>
+
+<h1>{{myWelcome}}</h1>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http)
+ {
+  $http({
+    method : "GET",
+    url : "welcome.htm"
+  })
+ .then(function mySuccess(response)
+ {
+      $scope.myWelcome = response.data;
+    },
+ function myError(response) 
+ {
+      $scope.myWelcome = response.statusText;
+  });
+});
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<p>Data : {{content}}</p>
+<p>Status : {{statuscode}}</p>
+<p>StatusText : {{statustext}}</p>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http)
+ {
+  $http.get("welcome.htm")
+  .then(function(response)
+ {
+      $scope.content = response.data;
+      $scope.statuscode = response.status;
+      $scope.statustext = response.statusText;            
+  });
+});
+</script>
+
+</body>
+</html>
 
  
