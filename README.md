@@ -2506,17 +2506,121 @@ app.controller('customersCtrl', function($scope, $http)
 </body>
 </html>
 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<select ng-model="selectedName" ng-options="x for x in names">
+</select>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) 
+ {
+    $scope.names = ["A", "B", "C"];
+});
+</script>
+</body>
+</html>
+
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<p>Select a car:</p>
+
+<select ng-model="selectedCar">
+<option ng-repeat="x in cars" value="{{x.model}}">{{x.model}}</option>
+</select>
+
+<h1>You selected: {{selectedCar}}</h1>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) 
+ {
+    $scope.cars = [
+        {model : "Porsche"},
+        {model : "Audi"},
+        {model : "Volvo "}
+    ];
+});
+</script>
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<p>Select a car:</p>
+
+<select ng-model="selectedCar">
+<option ng-repeat="x in cars" ng-value="{{x}}">{{x.model}}</option>
+</select>
+
+<h1>You selected a {{selectedCar.color}} {{selectedCar.model}}</h1>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope)
+ {
+    $scope.cars = [
+        {model : "AUDI", color : "white"},
+        {model : "Bmw", color : "white"},
+        {model : "Benz", color : "black"}
+    ];
+});
+</script>
+ </body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<p>Select a car:</p>
+
+<select ng-model="selectedCar" ng-options="x for (x, y) in cars">
+</select>
+
+<h1>You selected: {{selectedCar}}</h1>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) 
+ {
+    $scope.cars = 
+ {
+        car01 : "Ford",
+        car02 : "Fiat",
+        car03 : "Volvo"
+    }
+});
+</script>
+</body>
+</html>
+
  
  
  
