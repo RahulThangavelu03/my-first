@@ -2622,7 +2622,117 @@ app.controller('myCtrl', function($scope)
 </html>
 
  
+ <!DOCTYPE html>
+<html >
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+ 
+<div ng-app="myApp" ng-controller="customersCtrl">
+ 
+<table>
+  <tr ng-repeat="x in names">
+    <td>{{ x.Name }}</td>
+    <td>{{ x.Country }}</td>
+  </tr>
+</table>
+ 
+</div>
+ 
+<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+   $http.get("customers_mysql.php")
+   .then(function (response) {$scope.names = response.data.records;});
+});
+</script>
+ 
+</body>
+</html>
+
+ 
+ <!DOCTYPE html>
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="customersCtrl">
+
+<table>
+  <tr ng-repeat="x in names">
+    <td>{{ x.Name }}</td>
+    <td>{{ x.Country }}</td>
+  </tr>
+</table>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+    $http.get("customers_sql.aspx")
+    .then(function (response) {$scope.names = response.data.records;});
+});
+</script>
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="mySwitch=true">
+<p>
+<button ng-disabled="mySwitch">Click Me!</button>
+</p>
+<p>
+<input type="checkbox" ng-model="mySwitch"/>Button
+</p>
+<p>
+{{ mySwitch }}
+</p>
+</div> 
+
+</body>
+</html>
+
  
  
  
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+
+<p ng-show="true">I am visible.</p>
+
+<p ng-show="false">I am not visible.</p>
+
+</div> 
+
+</body>
+</html>
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+
+<p ng-show="true">this  is visible.</p>
+
+<p ng-show="false">this is not visible.</p>
+
+</div> 
+
+</body>
+</html>
+
+
  
