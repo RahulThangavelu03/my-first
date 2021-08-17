@@ -2733,6 +2733,120 @@ app.controller('customersCtrl', function($scope, $http) {
 
 </body>
 </html>
+ 
+ 
 
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<h1 ng-mousemove="count = count + 1">scroll over this</h1>
+
+<h2>{{ count }}</h2>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope)
+ {
+    $scope.count = 0;
+});
+</script> 
+
+</body>
+</html>
+
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<button ng-click="count = count + 1">Click this</button>
+
+<p>{{ count }}</p>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope)
+ {
+    $scope.count = 0;
+});
+</script> 
+
+</body>
+</html>
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<button ng-click="myFunc()">Click Me!</button>
+
+<div ng-show="showMe">
+    <h1>Menu:</h1>
+    <div>A</div>
+    <div>B</div>
+    <div>B</div>
+</div>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope)
+ {
+    $scope.showMe = false;
+    $scope.myFunc = function()
+ {
+        $scope.showMe = !$scope.showMe;
+    }
+});
+</script>
+
+<p>Click this.</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<h1 ng-mousemove="myFunc($event)">Mouse Over Me!</h1>
+
+<p>Coordinates: {{x + ', ' + y}}</p>
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope)
+ {
+    $scope.myFunc = function(myE) 
+ {
+        $scope.x = myE.clientX;
+        $scope.y = myE.clientY;
+    }
+});
+</script> 
+
+<p>plac the Mouse over this</p>
+
+</body>
+</html>
+
+ 
 
  
